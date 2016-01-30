@@ -20,8 +20,8 @@ set incsearch       " 在關鍵字還沒完全輸入完畢前就顯示結果
 set confirm         " 操作過程有衝突時，以明確的文字來詢問
 set history=100     " 保留 100 個使用過的指令
 set cursorline      " 顯示目前的游標位置
-set listchars=tab:\|\ ,eol:¬
-set list 
+"set listchars=tab:\|\ ,eol:¬
+"set list 
 
 " 狀態列設定
 set laststatus=2    " 在底部倒數第二行顯示狀態列(statusline)
@@ -58,6 +58,7 @@ set foldlevel=2
 
 " taglist
 let Tlist_Use_Right_Window   = 1
+map <F11> :TlistToggle<cr>
 
 " split
 nnoremap <C-J> <C-W><C-J>
@@ -67,3 +68,5 @@ nnoremap <C-H> <C-W><C-H>
 
 set splitbelow
 set splitright
+
+
