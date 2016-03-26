@@ -5,10 +5,11 @@ syntax on
 set t_Co=256        
 colorscheme iceberg 
 
-set tabstop=4       
+set tabstop=8       
+set softtabstop=0   
 set expandtab       
 set shiftwidth=4    
-set softtabstop=4   
+set smarttab
 set ai              
 set nu              
 set ru              
@@ -67,7 +68,15 @@ set splitbelow
 set splitright
 
 let Tlist_WinWidth=20
+let g:NERDTreeWinSize=20
 
 "pathogen.vim
 execute pathogen#infect()
 filetype plugin indent on
+
+"
+autocmd VimEnter * NERDTree
+autocmd VimEnter * TlistToggle
+
+"airline
+let g:airline_section_z = '%l/%L, %c'
