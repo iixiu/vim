@@ -47,7 +47,8 @@ endif
 " keymap
 cnoremap sudow w !sudo tee % >/dev/null
 inoremap jk <ESC>
-
+map ZZ :wqa<cr>
+map zz :qa<cr>
 
 " code foding
 set foldmethod=indent   
@@ -56,7 +57,8 @@ set nofoldenable
 set foldlevel=2
 
 " taglist
-let Tlist_Use_Right_Window   = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_Show_One_File = 1
 map <F11> :TlistToggle<cr>
 
 " NERDTree
@@ -78,9 +80,11 @@ let g:NERDTreeWinSize=20
 execute pathogen#infect()
 filetype plugin indent on
 
+"airline
+let g:airline_section_z = '%l/%L, %c'
+let g:airline#extensions#whitespace#enabled = 0
+
 "
 autocmd VimEnter * NERDTree
 autocmd VimEnter * TlistToggle
-
-"airline
-let g:airline_section_z = '%l/%L, %c'
+call feedkeys("\<C-L>")
