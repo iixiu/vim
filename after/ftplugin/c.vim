@@ -1,2 +1,2 @@
-set foldmarker=#if,#endif
-set foldmethod=marker
+"set foldmarker=#if,#endif
+"set foldmethod=marker
