@@ -1,11 +1,12 @@
-set encoding=utf-8
+scriptencoding utf-8
 set fileencodings=utf-8
+set encoding=utf-8
  
 syntax on           
 set t_Co=256        
 colorscheme iceberg 
 
-set tabstop=8       
+set tabstop=4       
 set softtabstop=0   
 set expandtab       
 set shiftwidth=4    
@@ -57,6 +58,9 @@ set foldlevel=2
 " taglist
 let Tlist_Use_Right_Window   = 1
 map <F11> :TlistToggle<cr>
+
+" NERDTree
+map <F10> :NERDTreeToggle<cr>
 
 " split
 nnoremap <C-J> <C-W><C-J>
