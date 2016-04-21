@@ -21,8 +21,8 @@ set confirm
 set history=100     
 set backspace=2     
 set cursorline      
-set listchars=tab:▸\ ,eol:¬
-set list 
+"set listchars=tab:▸\ ,eol:¬
+"set list 
 
 set laststatus=2     
 set statusline=%1*%<\ %2*[%F]
@@ -59,10 +59,13 @@ set foldlevel=2
 " taglist
 let Tlist_Use_Right_Window = 1
 let Tlist_Show_One_File = 1
-map <F11> :TlistToggle<cr>
+map <F12> :TlistToggle<cr>
 
 " NERDTree
-map <F10> :NERDTreeToggle<cr>
+map <F11> :NERDTreeToggle<cr>
+
+map <F9> :tabp<cr>
+map <F10> :tabn<cr>
 
 " split
 nnoremap <C-J> <C-W><C-J>
@@ -73,8 +76,8 @@ nnoremap <C-H> <C-W><C-H>
 set splitbelow
 set splitright
 
-let Tlist_WinWidth=20
-let g:NERDTreeWinSize=20
+let Tlist_WinWidth=18
+let g:NERDTreeWinSize=18
 
 "pathogen.vim
 execute pathogen#infect()
