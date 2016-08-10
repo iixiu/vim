@@ -1,6 +1,7 @@
 scriptencoding utf-8
 set fileencodings=utf-8
 set encoding=utf-8
+filetype plugin on
  
 syntax on           
 set t_Co=256        
@@ -88,6 +89,8 @@ let g:airline_section_z = '%l/%L, %c'
 let g:airline#extensions#whitespace#enabled = 0
 
 "
-autocmd VimEnter * NERDTree
-autocmd VimEnter * TlistToggle
-call feedkeys("\<C-L>")
+"autocmd VimEnter * NERDTree
+"autocmd VimEnter * TlistToggle
+"call feedkeys("\<C-L>")
+
+set colorcolumn=80
