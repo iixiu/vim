@@ -50,9 +50,9 @@ hi! LineNr ctermbg=235 ctermfg=239 guibg=#1e2132 guifg=#444b71
 hi! MatchParen ctermbg=237 ctermfg=255 guibg=#3e445e guifg=#ffffff
 hi! MoreMsg ctermfg=150 guifg=#b4be82
 "hi! NonText ctermbg=234 ctermfg=236 guibg=#161821 guifg=#242940
-hi! NonText ctermbg=none ctermfg=none guibg=none guifg=none
+hi! NonText ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 hi! SpecialKey ctermbg=234 ctermfg=236 guibg=#161821 guifg=#242940
-hi! Normal ctermbg=none ctermfg=none guibg=none guifg=none
+hi! Normal ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 hi! Operator ctermfg=110 guifg=#84a0c6
 hi! Pmenu ctermbg=236 ctermfg=251 guibg=#3d425b guifg=#c6c8d1
 hi! PmenuSbar ctermbg=236 guibg=#3d425b
